@@ -1,0 +1,39 @@
+﻿@model IEnumerable<FinalProjectMovies.Entities.MovieToGenres>
+
+@{
+    ViewBag.Title = "MovieGenres";
+}
+
+<h2>Choose Genres</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Genres.GenresName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movie.Title)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genres.GenresName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Movie.Title)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MovieToGenresID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MovieToGenresID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MovieToGenresID })
+        </td>
+    </tr>
+}
+
+</table>

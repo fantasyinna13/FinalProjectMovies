@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FinalProjectMovies",
+    "\\FinalProjectMovies\\Controllers",
+    "\\FinalProjectMovies\\Entities",
+    "\\FinalProjectMovies\\Migrations",
+    "\\FinalProjectMovies\\Models",
+    "\\FinalProjectMovies\\Views"
+  ],
+  "SelectedNode": "\\FinalProjectMovies\\Controllers\\MoviesController.cs",
+  "PreviewInSolutionExplorer": false
+}
